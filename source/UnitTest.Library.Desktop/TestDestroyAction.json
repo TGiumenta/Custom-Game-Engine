@@ -1,0 +1,88 @@
+{
+  "X": {
+    "type": "Float",
+    "value": 20.0
+  },
+  "Name": {
+    "type": "String",
+    "value": "Test World"
+  },
+  "Children": {
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "class": "Entity",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Entity 1"
+          },
+          "Actions": {
+            "type": "Table",
+            "class": "ActionDestroyAction",
+            "value": {
+              "Name": {
+                "type": "String",
+                "value": "DestroyIncrement"
+              },
+              "Target": {
+                "type": "String",
+                "value": "IncrementX"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Table",
+        "class": "Entity",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Entity 2"
+          },
+          "Health": {
+            "type": "Integer",
+            "value": 1
+          }
+        }
+      }
+    ]
+  },
+  "Position": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  },
+  "Rotation": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  },
+  "Scale": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  },
+  "Actions": {
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "class": "ActionIncrement",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "IncrementX"
+          },
+          "Target": {
+            "type": "String",
+            "value": "X"
+          },
+          "Step": {
+            "type": "Float",
+            "value": 2.0
+          }
+        }
+      }
+    ]
+  }
+}

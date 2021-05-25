@@ -1,0 +1,61 @@
+{
+  "Name": {
+    "type": "String",
+    "value": "Test World"
+  },
+  "Children": {
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "class": "Entity",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Entity 1"
+          },
+          "Health": {
+            "type": "Integer",
+            "value": 100
+          }
+        }
+      },
+      {
+        "type": "Table",
+        "class": "Entity",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Entity 2"
+          },
+          "Health": {
+            "type": "Integer",
+            "value": 1
+          }
+        }
+      },
+      {
+        "type": "Table",
+        "class": "TestMonster",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Slenderman"
+          }
+        }
+      }
+    ]
+  },
+  "Position": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  },
+  "Rotation": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  },
+  "Scale": {
+    "type": "Vector4",
+    "value": "vec4(0, 0, 0, 0)"
+  }
+}

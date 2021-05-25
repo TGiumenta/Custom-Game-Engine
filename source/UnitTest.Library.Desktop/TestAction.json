@@ -1,0 +1,33 @@
+{
+  "X": {
+    "type": "Float",
+    "value": 10.0
+  },
+  "Name": {
+    "type": "String",
+    "value": "Test Action"
+  },
+  "Actions": {
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "class": "ActionIncrement",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "X"
+          },
+          "Target": {
+            "type": "String",
+            "value": "X"
+          },
+          "Step": {
+            "type": "Float",
+            "value": 1.0
+          }
+        }
+      }
+    ]
+  }
+}

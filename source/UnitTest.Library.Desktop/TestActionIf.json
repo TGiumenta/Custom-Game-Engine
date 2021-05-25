@@ -1,0 +1,99 @@
+{
+  "X": {
+    "type": "Float",
+    "value": 10.0
+  },
+  "Name": {
+    "type": "String",
+    "value": "Test ActionIf"
+  },
+  "Actions": {
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "class": "ActionList",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Nested Action 1"
+          }
+        }
+      },
+      {
+        "type": "Table",
+        "class": "ActionListIf",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Nested Action 2"
+          },
+          "Condition": {
+            "type": "Integer",
+            "value": 1
+          },
+          "Then": {
+            "type": "Table",
+            "class": "ActionList",
+            "value": [
+              {
+                "type": "Table",
+                "class": "ActionList",
+                "value": [
+                  {
+                    "type": "Table",
+                    "class": "ActionIncrement",
+                    "value": {
+                      "Name": {
+                        "type": "String",
+                        "value": "X"
+                      },
+                      "Target": {
+                        "type": "String",
+                        "value": "X"
+                      },
+                      "Step": {
+                        "type": "Float",
+                        "value": 1.0
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "Else": {
+            "type": "Table",
+            "class": "ActionList",
+            "value": [
+              {
+                "type": "Table",
+                "class": "ActionList",
+                "value": [
+                  {
+                    "type": "Table",
+                    "class": "ActionIncrement",
+                    "value": {
+                      "Name": {
+                        "type": "String",
+                        "value": "X"
+                      },
+                      "Target": {
+                        "type": "String",
+                        "value": "X"
+                      },
+                      "Step": {
+                        "type": "Float",
+                        "value": -1.0
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

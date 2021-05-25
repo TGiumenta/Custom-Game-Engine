@@ -1,0 +1,80 @@
+{
+  "Name": {
+    "type": "String",
+    "value": "Test Name"
+  },
+  "Health": {
+    "type": "Integer",
+    "value": 100
+  },
+  "Direction": {
+    "type": "Vector4",
+    "value": "vec4(1, 0, 0, 1)"
+  },
+  "Transform": {
+    "type": "Matrix4",
+    "value": "mat4x4((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1))"
+  },
+  "Aliases": {
+    "type": "String",
+    "value": [ "Paul", "Tony", "Tom" ]
+  },
+  "Address": {
+    "type": "Table",
+    "value": {
+      "Street": {
+        "type": "String",
+        "value": "123 Anystreet St."
+      },
+      "City": {
+        "type": "String",
+        "value": "Orlando"
+      },
+      "Postal Code": {
+        "type": "Table",
+        "value": {
+          "Zip Code": {
+            "type": "Integer",
+            "value": 12345
+          },
+          "Zip Code+4": {
+            "type": "Integer",
+            "value": 6789
+          }
+        }
+      }
+    }
+  },
+  "Powers": {
+    "class": "Power",
+    "type": "Table",
+    "value": [
+      {
+        "type": "Table",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Laser Vision"
+          },
+          "Dps": {
+            "type": "Float",
+            "value": 1.5
+          }
+        }
+      },
+      {
+        "type": "Table",
+        "value": {
+          "Name": {
+            "type": "String",
+            "value": "Super Strength"
+          },
+          "Dps": {
+            "type": "Integer",
+            "value": 10
+          }
+        }
+      }
+    ]
+  }
+}

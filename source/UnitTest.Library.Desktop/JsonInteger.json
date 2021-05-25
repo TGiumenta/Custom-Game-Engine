@@ -1,0 +1,11 @@
+{
+  "ExternalInteger": {
+    "type": "Integer",
+    "value": 100
+  },
+
+  "ExternalIntegerArray": {
+    "type": "Integer",
+    "value": [ 100, 200, 300, 400, 500 ]
+  }
+}
